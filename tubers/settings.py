@@ -30,7 +30,10 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    # add created apps here
+    'youtubers.apps.YoutubersConfig',
     'webpages.apps.WebpagesConfig',
+    # to add style of admin panel
     'djangocms_admin_style',
     'django.contrib.admin',
     'django.contrib.auth',
@@ -38,6 +41,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    # ckeditor for textfield
+    'ckeditor',
 ]
 
 MIDDLEWARE = [
@@ -48,6 +53,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+
 ]
 
 ROOT_URLCONF = 'tubers.urls'

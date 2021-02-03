@@ -21,4 +21,6 @@ from django.conf import settings
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('webpages.urls')),
+    # if we type youtuber we go to this page
+    path('youtubers/',include('youtubers.urls')),
 ]+static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
